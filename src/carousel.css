@@ -1,0 +1,84 @@
+.video-carousel {
+    position: relative;
+    width: 100%;
+    height: 950px; /* Adjust for 9:16 ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    background-color: black;
+  }
+  
+  .video-item {
+    position: absolute;
+    width: 300px;
+    height: 533x;
+    margin: 0 2px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* Front video */
+  .video-item.front {
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Next video (right) */
+  .video-item.next {
+    z-index: 2;
+    opacity: 0.8;
+    transform: scale(0.9) translateX(300px);
+    margin-left: 100px;
+  }
+  
+  /* Behind the next video (right-most) */
+  .video-item.next-behind {
+    z-index: 1;
+    opacity: 0.6;
+    transform: scale(0.8) translateX(500px);
+    margin-left: 400px;
+  }
+  
+  /* Previous video (left) */
+  .video-item.prev {
+    z-index: 2;
+    opacity: 0.8;
+    transform: scale(0.9) translateX(-300px);
+    margin-right: 100px;
+  }
+  
+  /* Behind the previous video (left-most) */
+  .video-item.prev-behind {
+    z-index: 1;
+    opacity: 0.6;
+    transform: scale(0.8) translateX(-500px);
+    margin-right: 400px;
+    
+  }
+  
+  /* Hidden videos */
+  .video-item.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    z-index: 0;
+  }
+  

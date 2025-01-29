@@ -1,0 +1,74 @@
+#gal {
+    display: flex; /* This will place the images in a row */
+     /* Distributes images with equal spacing */
+    gap: 0.5rem; /* Adds a gap between images */
+    background-color: black;
+  }
+  
+  #gal img {
+    width: 100%; /* Ensure images scale well */
+    max-width: 220px; /* Optional: limit the maximum size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 8px;
+    margin-left: 15px;
+    border-radius:10px;
+    background-color: black;
+    
+  }
+  
+  #gall {
+    display: flex; /* This will place the images in a row */
+     /* Distributes images with equal spacing */
+    gap: 0.5rem; /* Adds a gap between images */
+    background-color: black;
+  }
+  
+  #gall img {
+    width: 100%; /* Ensure images scale well */
+    max-width: 220px; /* Optional: limit the maximum size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 8px;
+    margin-left: 15px;
+    border-radius:10px;
+    background-color: black;
+  }
+  
+  #galll {
+    display: flex; /* This will place the images in a row */
+     /* Distributes images with equal spacing */
+    gap: 0.5rem; /* Adds a gap between images */
+    background-color: black;
+  }
+  
+  #galll img {
+    width: 100%; /* Ensure images scale well */
+    max-width: 220px; /* Optional: limit the maximum size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 8px;
+    margin-left: 15px;
+    border-radius:10px;
+    background-color: black;
+  }
+  #gal img, #gall img, #galll img {
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    background-color: black;
+  }
+  
+  #gal img:hover, #gall img:hover, #galll img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+
+  #gal img:hover, #gall img:hover, #galll img:hover {
+    filter: grayscale(0); /* Remove grayscale on hover */
+    transform: scale(1.10); /* Slight zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    background-color: #000;
+  }
+  
+  #gal img:nth-child(even),
+  #gall img:nth-child(even),
+  #galll img:nth-child(even) {
+    filter: grayscale(0); /* Even images are not grayscale by default */
+    background-color: #000;
+  }
+  

@@ -1,0 +1,200 @@
+.experience-image {
+    max-width: 100%;
+    
+    padding-top: 0px;
+    animation: zoomIn 1.5s ease;
+  }
+  .experience-section {
+    background-color: #000000;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+    color:#ffff;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 30px;
+  }
+  
+  .experience-item {
+    background-color: #000000;
+    padding: 1rem;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .experience-item .content {
+    display: none;
+    
+  }
+  
+  .soulful-box:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+  }
+  
+  .soulful-box:hover .content {
+    display: none;
+  }
+  
+  .soulful-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #ff6b6b;
+  }
+  
+  .crea8iv-box:hover {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .crea8iv-box:hover .content {
+    display: none;
+  }
+  
+  .crea8iv-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #4caf50;
+  }
+  
+  .professor-box:hover {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .professor-box:hover .content {
+    display: none;
+  }
+  
+  .professor-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #2196f3;
+  }
+  
+  .freelance-box:hover {
+    background-color: #9c27b0;
+    color: #fff;
+  }
+  
+  .freelance-box:hover .content {
+    display: none;
+  }
+  
+  .freelance-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #9c27b0;
+  }
+  
+  .ariyatra-box:hover {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .ariyatra-box:hover .content {
+    display: none;
+  }
+  
+  .ariyatra-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #ff9800;
+  }
+  
+  .edc-box:hover {
+    background-color: #673ab7;
+    color: #fff;
+  }
+  
+  .edc-box:hover .content {
+    display: none;
+  }
+  
+  .edc-box:hover .highlight {
+    display: block;
+    color: #000000;
+    background-color: #673ab7;
+  }
+  
+  
+  .highlight {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .content {
+    display: block;
+  }
+  
+  .soulful {
+    color: #ff6b6b;
+  }
+  
+  .crea8iv {
+    color: #4caf50;
+  }
+  
+  .professor {
+    color: #2196f3;
+  }
+  
+  .freelance {
+    color: #9c27b0;
+  }
+  
+  .ariyatra {
+    color: #ff9800;
+  }
+  
+  .edc {
+    color: #673ab7;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
